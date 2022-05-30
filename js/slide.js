@@ -1,4 +1,5 @@
 {
+
     document.addEventListener("DOMContentLoaded", function () {
         var t = document.querySelector(".s6slide");
         function e(n) {
