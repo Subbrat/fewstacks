@@ -1,5 +1,23 @@
 @charset "UTF-8";
 
+.body,
+html {
+    overflow-y: scroll;
+}
+
+.body,
+html::-webkit-scrollbar {
+    display: none;
+}
+
+.body,
+html {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/*  */
+
 .s6-bar-item {
     font-weight: bold;
 }
