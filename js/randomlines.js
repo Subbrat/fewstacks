@@ -10,8 +10,6 @@
             "Why watching Title?",
             "Focus on Tutorial",
             "Aztec Col : First Volume",
-            "Dimensen",
-            "Dimensen by Subbrat",
         ];
         ! function Newline() {
             const randomLine = Math.floor(Math.random() * lib2.length);
