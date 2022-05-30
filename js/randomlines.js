@@ -1,14 +1,5 @@
 {
-    {
-        const lib = [
-            "Aztec Col : First Volume",
-            ": )",
-        ];
-        ! function Newline() {
-            const randomLine = Math.floor(Math.random() * lib.length);
-            document.getElementById('barr').innerHTML = lib[randomLine];
-        }();
-    }
+
     {
         const lib2 = [
             "Subbrat made this",
@@ -30,11 +21,11 @@
     {
         const lib3 = [
             "C Sharp",
-            " c#",
+            "C#",
         ];
         ! function Newline() {
             const randomLine = Math.floor(Math.random() * lib3.length);
-            document.getElementById('rtx1').innerHTML = lib3[randomLine];
+            document.getElementById('rtx').innerHTML = lib3[randomLine];
         }();
     }
 
