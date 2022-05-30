@@ -28,15 +28,16 @@
         }();
     }
     {
-        const lib2 = [
+        const lib3 = [
             "C Sharp",
             " c#",
         ];
         ! function Newline() {
-            const randomLine = Math.floor(Math.random() * lib2.length);
-            document.getElementById('rtx1').innerHTML = lib2[randomLine];
+            const randomLine = Math.floor(Math.random() * lib3.length);
+            document.getElementById('rtx1').innerHTML = lib3[randomLine];
         }();
     }
+
 
 }
 // function getRandomNumberBetween(min, max) {
