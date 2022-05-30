@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 .divhid {
     -moz-animation: hide 0s linear 3s forwards;
     -webkit-animation: hide 0s linear 3s forwards;
