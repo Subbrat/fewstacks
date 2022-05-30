@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+html {
+    scroll-behavior: smooth;
+}
+
 .body,
 html {
     overflow-y: scroll;
@@ -15,6 +19,7 @@ html {
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
+
 
 /*  */
 
