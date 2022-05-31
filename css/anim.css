@@ -39,7 +39,7 @@ a::after {
 }
 
 a::before {
-    background-color: #040720;
+    background-color: #696969;
     height: 2px;
     bottom: 0;
     transform-origin: 100% 50%;
