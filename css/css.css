@@ -72,3 +72,8 @@ html {
 .desc {
     text-transform: capitalize;
 }
+
+.s6-text-dg,
+.s6-hover-text-dg:hover {
+    color: #A9A9A9 !important
+}
