@@ -4,6 +4,16 @@ html {
     scroll-behavior: smooth;
 }
 
+.bgx {
+
+    background: #040720;
+    background: -webkit-linear-gradient(#040720, #000);
+    background: -moz-linear-gradient(#040720, #000);
+    background: linear-gradient(#040720, #000);
+    background-attachment: fixed;
+}
+
+
 .body,
 html {
     overflow-y: scroll;

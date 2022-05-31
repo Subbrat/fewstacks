@@ -2,14 +2,14 @@
 
     {
         const lib2 = [
-            "Subbrat made this",
+            "subbrat made this",
             ": )",
-            "Happy Learning",
-            "This line changes",
-            "Thank me later",
-            "Why watching Title?",
-            "Focus on Tutorial",
-            "Aztec Col : First Volume",
+            "happy learning",
+            "this line changes",
+            "thank me later",
+            "why watching title?",
+            "focus on tutorial",
+            "aztec col : first volume",
         ];
         ! function Newline() {
             const randomLine = Math.floor(Math.random() * lib2.length);
