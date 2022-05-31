@@ -4,7 +4,7 @@ html {
     scroll-behavior: smooth;
 }
 
-.bgx {
+body {
     background: #040720;
     background: -webkit-linear-gradient(#040720, #000);
     background: -moz-linear-gradient(#040720, #000);
