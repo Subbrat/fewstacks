@@ -1,5 +1,5 @@
 {
-    const countE0 = document.getElementById('ct0');
+    const countE0 = document.getElementById('ct');
     updateVisitCount();
     function updateVisitCount() {
         fetch('https://api.countapi.xyz/update/subbrat/experimente/?amount=+1')
