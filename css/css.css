@@ -5,14 +5,12 @@ html {
 }
 
 .bgx {
-
     background: #040720;
     background: -webkit-linear-gradient(#040720, #000);
     background: -moz-linear-gradient(#040720, #000);
     background: linear-gradient(#040720, #000);
     background-attachment: fixed;
 }
-
 
 .body,
 html {
@@ -30,9 +28,7 @@ html {
     scrollbar-width: none;
 }
 
-
 /*  */
-
 .s6-bar-item {
     font-weight: bold;
 }
@@ -75,5 +71,4 @@ html {
 
 .desc {
     text-transform: capitalize;
-    ;
 }
