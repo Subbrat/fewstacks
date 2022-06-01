@@ -35,7 +35,7 @@ async function init() {
    }
 }
 function onPlayerErrorEvent(errorEvent) {
-   // Extract the shaka.util.Error object from the event.
+   // Extract the sui.util.Error object from the event.
    onPlayerError(event.detail);
 }
 function onPlayerError(error) {
@@ -43,16 +43,16 @@ function onPlayerError(error) {
    console.error('Error code', error.code, 'object', error);
 }
 function onUIErrorEvent(errorEvent) {
-   // Extract the shaka.util.Error object from the event.
+   // Extract the sui.util.Error object from the event.
    onPlayerError(event.detail);
 }
 function initFailed(errorEvent) {
    // Handle the failure to load; errorEvent.detail.reasonCode has a
-   // shaka.ui.FailReasonCode describing why.
+   // sui.ui.FailReasonCode describing why.
    console.error('Unable to load the UI library!');
 }
-// Listen to the custom shaka-ui-loaded event, to wait until the UI is loaded.
-document.addEventListener('shaka-ui-loaded', init);
-// Listen to the custom shaka-ui-load-failed event, in case Shaka Player fails
+// Listen to the custom sui-ui-loaded event, to wait until the UI is loaded.
+document.addEventListener('sui-ui-loaded', init);
+// Listen to the custom sui-ui-load-failed event, in case sui Player fails
 // to load (e.g. due to lack of browser support).
-document.addEventListener('shaka-ui-load-failed', initFailed);
+document.addEventListener('sui-ui-load-failed', initFailed);

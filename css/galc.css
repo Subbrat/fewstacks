@@ -1,69 +1,69 @@
 /*! @license
- * Shaka Player
+ * sui Player
  * Copyright 2016 Google LLC
  * SPDX-License-Identifier: Apache-2.0
  */
-.shaka-hidden {
+.sui-hidden {
     display: none !important
 }
 
-.shaka-video-container {
+.sui-video-container {
     position: relative;
     top: 0;
     left: 0;
     display: flex
 }
 
-.shaka-video-container .material-icons-round {
+.sui-video-container .material-icons-round {
     font-family: 'Material Icons Round';
     font-size: 24px
 }
 
-.shaka-video-container * {
+.sui-video-container * {
     font-family: Roboto-Regular, Roboto, sans-serif
 }
 
-.shaka-video-container:fullscreen {
+.sui-video-container:fullscreen {
     width: 100%;
     height: 100%;
     background-color: #000
 }
 
-.shaka-video-container:fullscreen .shaka-text-container {
+.sui-video-container:fullscreen .sui-text-container {
     font-size: 4.4vmin
 }
 
-.shaka-video-container:-webkit-full-screen {
+.sui-video-container:-webkit-full-screen {
     width: 100%;
     height: 100%;
     background-color: #000
 }
 
-.shaka-video-container:-webkit-full-screen .shaka-text-container {
+.sui-video-container:-webkit-full-screen .sui-text-container {
     font-size: 4.4vmin
 }
 
-.shaka-video-container:-moz-full-screen {
+.sui-video-container:-moz-full-screen {
     width: 100%;
     height: 100%;
     background-color: #000
 }
 
-.shaka-video-container:-moz-full-screen .shaka-text-container {
+.sui-video-container:-moz-full-screen .sui-text-container {
     font-size: 4.4vmin
 }
 
-.shaka-video-container:-ms-fullscreen {
+.sui-video-container:-ms-fullscreen {
     width: 100%;
     height: 100%;
     background-color: #000
 }
 
-.shaka-video-container:-ms-fullscreen .shaka-text-container {
+.sui-video-container:-ms-fullscreen .sui-text-container {
     font-size: 4.4vmin
 }
 
-.shaka-controls-container {
+.sui-controls-container {
     position: absolute;
     top: 0;
     left: 0;
@@ -81,26 +81,26 @@
     z-index: 1
 }
 
-.shaka-video-container:not([shaka-controls=true]) .shaka-controls-container {
+.sui-video-container:not([sui-controls=true]) .sui-controls-container {
     display: none
 }
 
-.shaka-controls-container * {
+.sui-controls-container * {
     flex-shrink: 0
 }
 
-.shaka-controls-container[casting=true] .shaka-fullscreen-button {
+.sui-controls-container[casting=true] .sui-fullscreen-button {
     display: none
 }
 
-.shaka-bottom-controls {
+.sui-bottom-controls {
     width: 96%;
     padding: 0;
     padding-bottom: 2.5%;
     z-index: 1
 }
 
-.shaka-controls-button-panel {
+.sui-controls-button-panel {
     padding: 0;
     margin: 0;
     display: flex;
@@ -120,12 +120,12 @@
     transition: opacity cubic-bezier(.4, 0, .6, 1) .6s
 }
 
-.shaka-controls-container[casting=true] .shaka-controls-button-panel,
-.shaka-controls-container[shown=true] .shaka-controls-button-panel {
+.sui-controls-container[casting=true] .sui-controls-button-panel,
+.sui-controls-container[shown=true] .sui-controls-button-panel {
     opacity: 1
 }
 
-.shaka-controls-button-panel>* {
+.sui-controls-button-panel>* {
     color: #fff;
     height: 32px;
     margin: 1px 6px;
@@ -135,11 +135,11 @@
     cursor: pointer
 }
 
-.shaka-controls-button-panel .shaka-overflow-menu-only {
+.sui-controls-button-panel .sui-overflow-menu-only {
     display: none
 }
 
-.shaka-play-button-container {
+.sui-play-button-container {
     margin: 0;
     width: 100%;
     height: 100%;
@@ -154,7 +154,7 @@
     align-items: center
 }
 
-.shaka-scrim-container {
+.sui-scrim-container {
     margin: 0;
     width: 100%;
     height: 100%;
@@ -169,12 +169,12 @@
     background: linear-gradient(to top, #000 0, rgba(0, 0, 0, 0) 15%)
 }
 
-.shaka-controls-container[casting=true] .shaka-scrim-container,
-.shaka-controls-container[shown=true] .shaka-scrim-container {
+.sui-controls-container[casting=true] .sui-scrim-container,
+.sui-controls-container[shown=true] .sui-scrim-container {
     opacity: 1
 }
 
-.shaka-text-container {
+.sui-text-container {
     position: absolute;
     left: 0;
     right: 0;
@@ -188,19 +188,19 @@
     transition-delay: .5s
 }
 
-.shaka-text-container span {
+.sui-text-container span {
     font-size: 20px;
     line-height: 1.4;
     background-color: rgba(0, 0, 0, .8);
     color: #fff
 }
 
-.shaka-controls-container[shown=true]~.shaka-text-container {
+.sui-controls-container[shown=true]~.sui-text-container {
     bottom: 15%;
     transition-delay: 0s
 }
 
-.shaka-spinner-container {
+.sui-spinner-container {
     position: absolute;
     left: 0;
     right: 0;
@@ -214,11 +214,11 @@
     align-items: center
 }
 
-.shaka-video-container:not([shaka-controls=true]) .shaka-spinner-container {
+.sui-video-container:not([sui-controls=true]) .sui-spinner-container {
     display: none
 }
 
-.shaka-spinner {
+.sui-spinner {
     position: relative;
     top: 0;
     left: 0;
@@ -230,7 +230,7 @@
     filter: drop-shadow(0 0 2px rgba(255, 255, 255, .5))
 }
 
-.shaka-play-button {
+.sui-play-button {
     box-sizing: border-box;
     padding: 7.5%;
     width: 0;
@@ -247,49 +247,49 @@
     transition: opacity cubic-bezier(.4, 0, .6, 1) .6s
 }
 
-.shaka-controls-container[casting=true] .shaka-play-button,
-.shaka-controls-container[shown=true] .shaka-play-button {
+.sui-controls-container[casting=true] .sui-play-button,
+.sui-controls-container[shown=true] .sui-play-button {
     opacity: 1
 }
 
-.shaka-play-button[icon=play] {
+.sui-play-button[icon=play] {
     background-image: url(data:image/svg+xml,%3Csvg%20fill%3D%22%23000000%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20width%3D%2224%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M8%205v14l11-7z%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M0%200h24v24H0z%22%20fill%3D%22none%22%2F%3E%0A%3C%2Fsvg%3E)
 }
 
-.shaka-play-button[icon=pause] {
+.sui-play-button[icon=pause] {
     background-image: url(data:image/svg+xml,%3Csvg%20fill%3D%22%23000000%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20width%3D%2224%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M6%2019h4V5H6v14zm8-14v14h4V5h-4z%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M0%200h24v24H0z%22%20fill%3D%22none%22%2F%3E%0A%3C%2Fsvg%3E)
 }
 
-.shaka-current-time {
+.sui-current-time {
     font-size: 14px;
     color: #fff;
     height: auto;
     cursor: pointer
 }
 
-.shaka-current-time[disabled] {
+.sui-current-time[disabled] {
     background-color: transparent;
     color: #fff;
     cursor: default
 }
 
-.shaka-controls-container button:focus,
-.shaka-controls-container input:focus {
+.sui-controls-container button:focus,
+.sui-controls-container input:focus {
     outline: 1px solid Highlight
 }
 
-.shaka-controls-container button:-moz-focus-inner,
-.shaka-controls-container input:-moz-focus-outer {
+.sui-controls-container button:-moz-focus-inner,
+.sui-controls-container input:-moz-focus-outer {
     outline: 0;
     border: 0
 }
 
-.shaka-controls-container:not(.shaka-keyboard-navigation) button:focus,
-.shaka-controls-container:not(.shaka-keyboard-navigation) input:focus {
+.sui-controls-container:not(.sui-keyboard-navigation) button:focus,
+.sui-controls-container:not(.sui-keyboard-navigation) input:focus {
     outline: 0
 }
 
-.shaka-range-container {
+.sui-range-container {
     position: relative;
     top: 0;
     left: 0;
@@ -299,11 +299,11 @@
     background: #fff
 }
 
-.shaka-volume-bar-container {
+.sui-volume-bar-container {
     width: 100px
 }
 
-.shaka-range-element {
+.sui-range-element {
     -webkit-appearance: none;
     background: 0 0;
     position: absolute;
@@ -320,7 +320,7 @@
     z-index: 1
 }
 
-.shaka-range-element::-webkit-slider-runnable-track {
+.sui-range-element::-webkit-slider-runnable-track {
     width: 100%;
     height: 12px;
     background: 0 0;
@@ -328,7 +328,7 @@
     border: none
 }
 
-.shaka-range-element::-webkit-slider-thumb {
+.sui-range-element::-webkit-slider-thumb {
     -webkit-appearance: none;
     border: none;
     border-radius: 12px;
@@ -337,7 +337,7 @@
     background: #fff
 }
 
-.shaka-range-element::-moz-range-track {
+.sui-range-element::-moz-range-track {
     width: 100%;
     height: 12px;
     background: 0 0;
@@ -345,7 +345,7 @@
     border: none
 }
 
-.shaka-range-element::-moz-range-thumb {
+.sui-range-element::-moz-range-thumb {
     -webkit-appearance: none;
     border: none;
     border-radius: 12px;
@@ -354,26 +354,14 @@
     background: #fff
 }
 
-.shaka-seek-bar-container {
+.sui-seek-bar-container {
     opacity: 0;
     transition: opacity cubic-bezier(.4, 0, .6, 1) .6s
 }
 
-.shaka-controls-container[casting=true] .shaka-seek-bar-container,
-.shaka-controls-container[shown=true] .shaka-seek-bar-container {
+.sui-controls-container[casting=true] .sui-seek-bar-container,
+.sui-controls-container[shown=true] .sui-seek-bar-container {
     opacity: 1
-}
-
-.shaka-ad-markers {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%
 }
 
 /*!
@@ -401,7 +389,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-.shaka-spinner-svg {
+.sui-spinner-svg {
     position: absolute;
     top: 0;
     left: 0;
@@ -415,7 +403,7 @@
     padding: 0
 }
 
-.shaka-spinner-path {
+.sui-spinner-path {
     stroke: #202124;
     stroke-dasharray: 20, 200;
     stroke-dashoffset: 0;
@@ -446,15 +434,15 @@
     }
 }
 
-.shaka-spacer {
+.sui-spacer {
     cursor: default;
     flex-shrink: 1;
     flex-grow: 1;
     margin: 0
 }
 
-.shaka-overflow-menu,
-.shaka-settings-menu {
+.sui-overflow-menu,
+.sui-settings-menu {
     overflow-x: hidden;
     overflow-y: auto;
     white-space: nowrap;
@@ -473,15 +461,15 @@
     bottom: 30px
 }
 
-.shaka-controls-container[casting=true] .shaka-overflow-menu,
-.shaka-controls-container[casting=true] .shaka-settings-menu,
-.shaka-controls-container[shown=true] .shaka-overflow-menu,
-.shaka-controls-container[shown=true] .shaka-settings-menu {
+.sui-controls-container[casting=true] .sui-overflow-menu,
+.sui-controls-container[casting=true] .sui-settings-menu,
+.sui-controls-container[shown=true] .sui-overflow-menu,
+.sui-controls-container[shown=true] .sui-settings-menu {
     opacity: 1
 }
 
-.shaka-overflow-menu button,
-.shaka-settings-menu button {
+.sui-overflow-menu button,
+.sui-settings-menu button {
     font-size: 14px;
     background: 0 0;
     color: #000;
@@ -493,80 +481,80 @@
     cursor: pointer
 }
 
-.shaka-overflow-menu button:hover,
-.shaka-settings-menu button:hover {
+.sui-overflow-menu button:hover,
+.sui-settings-menu button:hover {
     background: #e0e0e0
 }
 
-.shaka-overflow-menu button label,
-.shaka-settings-menu button label {
+.sui-overflow-menu button label,
+.sui-settings-menu button label {
     cursor: pointer
 }
 
-.shaka-keyboard-navigation .shaka-overflow-menu button:focus,
-.shaka-keyboard-navigation .shaka-settings-menu button:focus {
+.sui-keyboard-navigation .sui-overflow-menu button:focus,
+.sui-keyboard-navigation .sui-settings-menu button:focus {
     background: #e0e0e0
 }
 
-.shaka-overflow-menu i,
-.shaka-settings-menu i {
+.sui-overflow-menu i,
+.sui-settings-menu i {
     padding-left: 10px;
     padding-right: 10px
 }
 
-.shaka-overflow-menu.shaka-low-position,
-.shaka-settings-menu.shaka-low-position {
+.sui-overflow-menu.sui-low-position,
+.sui-settings-menu.sui-low-position {
     bottom: 15px
 }
 
-.shaka-overflow-menu span {
+.sui-overflow-menu span {
     text-align: left
 }
 
-.shaka-overflow-button-label {
+.sui-overflow-button-label {
     position: relative;
     display: flex;
     flex-direction: column
 }
 
-.shaka-current-selection-span {
+.sui-current-selection-span {
     color: rgba(0, 0, 0, .54)
 }
 
-.shaka-settings-menu span {
+.sui-settings-menu span {
     margin-left: 54px
 }
 
-.shaka-back-to-overflow-button span {
+.sui-back-to-overflow-button span {
     margin-left: 0
 }
 
-.shaka-back-to-overflow-button i {
+.sui-back-to-overflow-button i {
     padding-right: 20px
 }
 
-.shaka-auto-span {
+.sui-auto-span {
     left: 17px
 }
 
-.shaka-captions-on {
+.sui-captions-on {
     color: #000
 }
 
-.shaka-captions-off {
+.sui-captions-off {
     color: grey
 }
 
-.shaka-controls-container[ad-active=true] {
+.sui-controls-container[ad-active=true] {
     pointer-events: none
 }
 
-.shaka-controls-container[ad-active=true] .shaka-bottom-controls {
+.sui-controls-container[ad-active=true] .sui-bottom-controls {
     pointer-events: auto
 }
 
-.shaka-client-side-ad-container,
-.shaka-server-side-ad-container {
+.sui-client-side-ad-container,
+.sui-server-side-ad-container {
     position: absolute;
     left: 0;
     right: 0;
@@ -574,73 +562,23 @@
     bottom: 0
 }
 
-.shaka-video-container[shaka-controls=true] .shaka-client-side-ad-container iframe,
-.shaka-video-container[shaka-controls=true] .shaka-server-side-ad-container iframe {
+.sui-video-container[sui-controls=true] .sui-client-side-ad-container iframe,
+.sui-video-container[sui-controls=true] .sui-server-side-ad-container iframe {
     height: 90%
 }
 
-.shaka-server-side-ad-container {
+.sui-server-side-ad-container {
     width: 100%;
     height: 100%;
     flex-shrink: 1
 }
 
-.shaka-server-side-ad-container:not([ad-active=true]) {
+.sui-server-side-ad-container:not([ad-active=true]) {
     pointer-events: none
 }
 
-.shaka-ad-controls {
-    display: flex;
-    flex-direction: row;
-    z-index: 1;
-    padding-bottom: 1%
-}
-
-.shaka-video-container:not([shaka-controls=true]) .shaka-ad-controls {
+.sui-video-container:not([sui-controls=true]) {
     display: none
-}
-
-.shaka-ad-controls button,
-.shaka-ad-controls div {
-    color: #fff;
-    font-size: initial
-}
-
-.shaka-ad-controls div:not(.shaka-skip-ad-counter) {
-    margin: 1px 6px
-}
-
-.shaka-ad-counter,
-.shaka-ad-position {
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
-    text-shadow: 1px 1px 4px #000
-}
-
-.shaka-skip-ad-container {
-    position: relative;
-    right: -2%;
-    display: flex;
-    flex-direction: row;
-    margin: 0
-}
-
-.shaka-skip-ad-button {
-    padding: 5px 15px;
-    background: rgba(0, 0, 0, .7);
-    border: none;
-    cursor: pointer
-}
-
-.shaka-skip-ad-button:disabled {
-    background: rgba(0, 0, 0, .3)
-}
-
-.shaka-skip-ad-counter {
-    padding: 5px 5px;
-    background: rgba(0, 0, 0, .7);
-    margin: 0
 }
 
 @font-face {
