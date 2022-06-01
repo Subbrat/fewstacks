@@ -52,7 +52,7 @@
             function b(k) { this.a = (h += Math.random() + 1).toString(); if (k) { k = r(k); for (var l; !(l = k.next()).done;)l = l.value, this.set(l[0], l[1]) } } function c() { } function d(k) { var l = typeof k; return "object" === l && null !== k || "function" === l } function e(k) { if (!Ha(k, g)) { var l = new c; ca(k, g, { value: l }) } } function f(k) { var l = Object[k]; l && (Object[k] = function (m) { if (m instanceof c) return m; Object.isExtensible(m) && e(m); return l(m) }) } if (function () {
                 if (!a || !Object.seal) return !1; try {
                     var k = Object.seal({}), l = Object.seal({}),
-                        m = new a([[k, 2], [l, 3]]); if (2 != m.get(k) || 3 != m.get(l)) return !1; m["delete"](k); m.set(l, 4); return !m.has(k) && 4 == m.get(l)
+                    m = new a([[k, 2], [l, 3]]); if (2 != m.get(k) || 3 != m.get(l)) return !1; m["delete"](k); m.set(l, 4); return !m.has(k) && 4 == m.get(l)
                 } catch (n) { return !1 }
             }()) return a; var g = "$jscomp_hidden_" + Math.random(); f("freeze"); f("preventExtensions"); f("seal"); var h = 0; b.prototype.set = function (k, l) { if (!d(k)) throw Error("Invalid WeakMap key"); e(k); if (!Ha(k, g)) throw Error("WeakMap key fail: " + k); k[g][this.a] = l; return this }; b.prototype.get = function (k) { return d(k) && Ha(k, g) ? k[g][this.a] : void 0 }; b.prototype.has = function (k) {
                 return d(k) &&
@@ -760,7 +760,7 @@
                     var h = a.kb; a: {
                         var k = r(h.a); for (var l = k.next(); !l.done; l = k.next())if (l = l.value, l.schemeIdUri == g.schemeIdUri && l.id == g.id && l.startTime == g.startTime && l.endTime == g.endTime) {
                             k =
-                                l; break a
+                            l; break a
                         } k = null
                     } null == k && (h.a.add(g), h.b(g))
                 }, onEvent: function (g) { return a.dispatchEvent(g) }, onError: function (g) { return Rk(a, g) }, isLowLatencyMode: function () { return a.m.streaming.lowLatencyMode }, isAutoLowLatencyMode: function () { return a.m.streaming.autoLowLatencyMode }, enableLowLatencyMode: function () { a.configure("streaming.lowLatencyMode", !0) }
@@ -980,7 +980,7 @@
         pm.prototype.getMinSuggestedDuration = pm.prototype.getMinSuggestedDuration; pm.prototype.getDuration = pm.prototype.getDuration; function qm(a, b, c, d) {
             var e = this; this.A = a; this.a = b; this.g = null; this.G = NaN; this.f = d; this.F = !1; this.C = this.i = this.o = null; this.s = ""; this.b = new yf; a = new google.ima.dai.api.UiSettings; a.setLocale(c); this.c = new google.ima.dai.api.StreamManager(this.a, this.A, a); this.f(new M("ima-stream-manager-loaded", { imaStreamManager: this.c })); this.b.h(this.c, google.ima.dai.api.StreamEvent.Type.LOADED, function (f) { rm(e, f) }); this.b.h(this.c, google.ima.dai.api.StreamEvent.Type.ERROR, function () {
                 e.s.length ? e.g.resolve(e.s) :
-                    e.g.reject("IMA Stream request returned an error and there was no backup asset uri provided."); e.g = null
+                e.g.reject("IMA Stream request returned an error and there was no backup asset uri provided."); e.g = null
             }); this.b.h(this.c, google.ima.dai.api.StreamEvent.Type.AD_BREAK_STARTED, function () { }); this.b.h(this.c, google.ima.dai.api.StreamEvent.Type.STARTED, function (f) { f = f.getAd(); e.i = new pm(f, e.a); e.C && (e.i.b = e.C); e.f(new M("ad-started", { ad: e.i })); e.A.setAttribute("ad-active", "true") }); this.b.h(this.c, google.ima.dai.api.StreamEvent.Type.AD_BREAK_ENDED, function () {
                 e.A.removeAttribute("ad-active"); var f = e.a.currentTime;
                 e.o && e.o > f && (e.a.currentTime = e.o, e.o = null)
@@ -1075,7 +1075,7 @@
                     e)
             }; a.g = b.getCastMessageBus("urn:x-cast:com.google.sui.v2"); a.g.onMessage = function (e) { return kn(a, e) }; b.start(); b = r(vm); for (var c = b.next(); !c.done; c = b.next())a.b.h(a.a, c.value, function (e) { return ln(a, "video", e) }); for (var d in em) a.b.h(a.c, em[d], function (e) { return ln(a, "player", e) }); cast.__platform__ && cast.__platform__.canDisplayType('video/mp4; codecs="avc1.640028"; width=3840; height=2160') ? a.c.ke(3840, 2160) : a.c.ke(1920, 1080); a.b.h(a.a, "loadeddata", function () { a.C = !0 }); a.b.h(a.c, "loading", function () {
                 a.o =
-                    !1; mn(a)
+                !1; mn(a)
             }); a.b.h(a.a, "playing", function () { a.o = !1; mn(a) }); a.b.h(a.a, "pause", function () { mn(a) }); a.b.h(a.c, "unloading", function () { a.o = !0; mn(a) }); a.b.h(a.a, "ended", function () { (new P(function () { a.a && a.a.ended && (a.o = !0, mn(a)) })).N(nn) })
         } function gn(a) { a.i = 0; a.A = !0; a.G = 0 != cast.receiver.CastReceiverManager.getInstance().getSenders().length; mn(a) }
         function mn(a) { var b; J(function (c) { if (1 == c.a) return z(c, Promise.resolve(), 2); if (!a.c) return c["return"](); b = new M("caststatuschanged"); a.dispatchEvent(b); on(a) || pn(a); A(c) }) }
@@ -1212,7 +1212,7 @@
         function Zo(a, b) {
             a.roles = Array.from(new Set(a.roles.concat(b.roles))); b.emsgSchemeIdUris && (a.emsgSchemeIdUris = Array.from(new Set(a.emsgSchemeIdUris.concat(b.emsgSchemeIdUris)))); var c = b.keyIds; c = new Set(ja(a.keyIds).concat(ja(c))); a.keyIds = c; null == a.originalId ? a.originalId = b.originalId : a.originalId += "," + (b.originalId || ""); c = li(a.drmInfos, b.drmInfos); if (b.drmInfos.length && a.drmInfos.length && !c.length) throw new N(2, 4, 4038); a.drmInfos = c; a.encrypted = a.encrypted || b.encrypted; if (b.closedCaptions) {
                 a.closedCaptions ||
-                    (a.closedCaptions = new Map); c = r(b.closedCaptions); for (var d = c.next(); !d.done; d = c.next()) { var e = r(d.value); d = e.next().value; e = e.next().value; a.closedCaptions.set(d, e) }
+                (a.closedCaptions = new Map); c = r(b.closedCaptions); for (var d = c.next(); !d.done; d = c.next()) { var e = r(d.value); d = e.next().value; e = e.next().value; a.closedCaptions.set(d, e) }
             } a.segmentIndex.g.push(b.segmentIndex); b.trickModeVideo ? (a.trickModeVideo || (a.trickModeVideo = Yo(b.trickModeVideo), a.trickModeVideo.segmentIndex = a.segmentIndex.clone()), Zo(a.trickModeVideo, b.trickModeVideo)) : a.trickModeVideo && Zo(a.trickModeVideo, b)
         }
         function bp(a, b) { a.roles = Array.from(new Set(a.roles.concat(b.roles))); var c = b.keyIds; c = new Set(ja(a.keyIds).concat(ja(c))); a.keyIds = c; a.encrypted = a.encrypted && b.encrypted; a.segments.push.apply(a.segments, ja(b.segments)); if (b.closedCaptions) { a.closedCaptions || (a.closedCaptions = new Map); c = r(b.closedCaptions); for (var d = c.next(); !d.done; d = c.next()) { var e = r(d.value); d = e.next().value; e = e.next().value; a.closedCaptions.set(d, e) } } }
@@ -1789,7 +1789,7 @@
             0 === c.size && tu(c); a: { var d = a; a = []; for (var e = -1, f = "", g = 0; g < d.length; g++)if ("/" === d[g]) { var h = d.indexOf(">", g); if (h <= g) { a = d; break a } h = d.substring(g + 1, h); var k = a.pop(); if (k === h) f += "/" + h + ">"; else { if (!k.startsWith("c.") || "c" !== h) { a = d; break a } f += "/" + k + ">" } g += h.length + 1 } else "<" === d[g] ? e = g + 1 : ">" === d[g] && 0 < e && (a.push(d.substr(e, g - e)), e = -1), f += d[g]; a = f } if (e = Sn("<span>" + a + "</span>", "span")) {
                 d = []; e = e.childNodes; if (1 == e.length && (f = e[0], f.nodeType == Node.TEXT_NODE || f.nodeType == Node.CDATA_SECTION_NODE)) {
                     b.payload =
-                        a; return
+                    a; return
                 } a = r(e); for (e = a.next(); !e.done; e = a.next())wu(e.value, b, d, c); b.nestedCues = d
             } else b.payload = a
         } function xu(a, b) { return a && 0 < a.length ? a : b }
@@ -1859,7 +1859,7 @@
                 switch (n.a) {
                     case 1: return console.assert(b == navigator.mediaCapabilities, 'bad "this" for decodingInfo'), c = null, a.keySystemConfiguration && (d = a.keySystemConfiguration, e = d.keySystem, f = d.audio && d.audio.encryptionScheme, g = d.video && d.video.encryptionScheme, c = Uu(e), h = { powerEfficient: !1, smooth: !1, supported: !1, keySystemAccess: null, configuration: a }, f && f != c || g && g != c) ? n["return"](h) : z(n, Yu.call(b, a), 2); case 2: k = n.b; if (k.keySystemAccess) {
                         k.keySystemAccess =
-                            new Wu(k.keySystemAccess, c); n.u(3); break
+                        new Wu(k.keySystemAccess, c); n.u(3); break
                     } if (!a.keySystemConfiguration) { n.u(3); break } var p = a.keySystemConfiguration, t = [], v = []; p.audio && t.push({ robustness: p.audio.robustness || "", contentType: a.audio.contentType }); p.video && v.push({ robustness: p.video.robustness || "", contentType: a.video.contentType }); p = { initDataTypes: p.initDataType ? [p.initDataType] : [], distinctiveIdentifier: p.distinctiveIdentifier, persistentState: p.persistentState, sessionTypes: p.sessionTypes }; t.length && (p.audioCapabilities = t); v.length && (p.videoCapabilities =
                         v); l = p; m = k; return z(n, navigator.requestMediaKeySystemAccess(a.keySystemConfiguration.keySystem, [l]), 5); case 5: m.keySystemAccess = n.b; case 3: return n["return"](k)
                 }
@@ -1982,7 +1982,7 @@
         Av.prototype.create = function (a, b) { return new vv(a, b) }; vv.Factory = Av; function Z(a, b, c, d) {
             bb.call(this); var e = this; this.Z = !0; this.m = d; this.o = new Tm(c, a, this.m.castReceiverAppId); this.jb = !0; this.a = this.o.sb(); this.s = c; this.C = this.o.Wb(); this.Za = a; this.f = b; this.xb = this.C.Xc(); this.g = this.i = null; this.W = !1; this.A = []; this.Rb = []; this.wb = !1; this.Y = new P(function () { e.f.style.cursor = "none"; e.wb = !1; Bv(e) }); this.ka = new P(function () { e.c.removeAttribute("shown"); e.F.N(2) }); this.F = new P(function () { for (var f = r(e.A), g = f.next(); !g.done; g = f.next())Y(g.value, !1) }); this.$a = new P(function () {
                 e.Eb() &&
-                    Cv(e)
+                Cv(e)
             }); this.G = null; this.M = []; this.Fa = Dv(); this.b = new yf; this.configure(this.m); Ev(this); this.oa = new Set; Fv(this); this.$a.ba(.125); this.b.h(this.Fa, "locale-changed", function (f) { e.xb.setLocale(f.locales[0]) })
         } u(Z, bb); q = Z.prototype;
         q.destroy = function () { var a = this; return J(function (b) { switch (b.a) { case 1: a.b && (a.b.release(), a.b = null); a.Y && (a.Y.stop(), a.Y = null); a.ka && (a.ka.stop(), a.ka = null); a.F && (a.F.stop(), a.F = null); a.$a && (a.$a.stop(), a.$a = null); Gv(a); a.c && (a.f.removeChild(a.c), a.c = null); if (!a.o) { b.u(2); break } return z(b, a.o.destroy(), 3); case 3: a.o = null; case 2: if (!a.Za) { b.u(4); break } return z(b, a.Za.destroy(), 5); case 5: a.Za = null; case 4: a.C = null, a.s = null, a.a = null, a.Fa = null, a.oa.clear(), A(b) } }) };

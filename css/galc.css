@@ -97,8 +97,7 @@
     width: 96%;
     padding: 0;
     padding-bottom: 2.5%;
-    z-index: 1;
-
+    z-index: 1
 }
 
 .sui-controls-button-panel {
@@ -365,6 +364,18 @@
     opacity: 1
 }
 
+.sui-ad-markers {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%
+}
+
 /*!
  * @license
  * The SVG/CSS buffering spinner is based on http://codepen.io/jczimm/pen/vEBpoL
@@ -578,8 +589,58 @@
     pointer-events: none
 }
 
-.sui-video-container:not([sui-controls=true]) {
+.sui-ad-controls {
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+    padding-bottom: 1%
+}
+
+.sui-video-container:not([sui-controls=true]) .sui-ad-controls {
     display: none
+}
+
+.sui-ad-controls button,
+.sui-ad-controls div {
+    color: #fff;
+    font-size: initial
+}
+
+.sui-ad-controls div:not(.sui-skip-ad-counter) {
+    margin: 1px 6px
+}
+
+.sui-ad-counter,
+.sui-ad-position {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    text-shadow: 1px 1px 4px #000
+}
+
+.sui-skip-ad-container {
+    position: relative;
+    right: -2%;
+    display: flex;
+    flex-direction: row;
+    margin: 0
+}
+
+.sui-skip-ad-button {
+    padding: 5px 15px;
+    background: rgba(0, 0, 0, .7);
+    border: none;
+    cursor: pointer
+}
+
+.sui-skip-ad-button:disabled {
+    background: rgba(0, 0, 0, .3)
+}
+
+.sui-skip-ad-counter {
+    padding: 5px 5px;
+    background: rgba(0, 0, 0, .7);
+    margin: 0
 }
 
 @font-face {
