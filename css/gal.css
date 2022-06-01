@@ -1,34 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
 * {
-   font-family: 'Poppins', sans-serif;
    margin: 0;
    padding: 0;
    box-sizing: border-box;
-   outline: none;
-   border: none;
-   text-decoration: none;
-   text-transform: capitalize;
 }
 
-body {
-   padding: 20px;
+.dvb {
+   padding: 1.1%;
 }
 
 .container {
-   max-width: 1200px;
-   margin: 100px auto;
    display: flex;
    flex-wrap: wrap;
    align-items: flex-start;
-   gap: 20px;
+   gap: 10px;
 }
 
 .container .main-video-container {
    flex: 1 1 700px;
-   border-radius: 5px;
-   box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
-   background-color: #fff;
+   border-radius: 3px;
+   /* background-color: rgba(152, 152, 152, 0.765); */
    padding: 15px;
 }
 
@@ -49,16 +41,16 @@ body {
    overflow-y: scroll;
    border-radius: 5px;
    box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
-   background-color: #fff;
+   /* background-color: #fff; */
    padding: 15px;
 }
 
 .container .video-list-container::-webkit-scrollbar {
-   width: 10px;
+   width: 5px;
 }
 
 .container .video-list-container::-webkit-scrollbar-track {
-   background-color: #fff;
+   background-color: rgba(255, 255, 255, 0.152);
    border-radius: 5px;
 }
 
@@ -72,7 +64,7 @@ body {
    align-items: center;
    gap: 15px;
    padding: 10px;
-   background-color: #eee;
+   background-color: rgba(238, 238, 238, 0.118);
    cursor: pointer;
    border-radius: 5px;
    margin-bottom: 10px;
