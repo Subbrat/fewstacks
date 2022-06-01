@@ -46,7 +46,8 @@ html {
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.15)
 }
 
-.s6-card-2-light {
+.s6-card-2-light,
+.s6-hover-card-2-light:hover {
     box-shadow: 0 2px 5px 0 rgba(255, 255, 255, 0.84), 0 2px 10px 0 rgba(255, 255, 255, 0.84)
 }
 
